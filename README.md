@@ -1,6 +1,7 @@
 # 🔬 scRNA-seq 10x 
 
-![grafik](https://github.com/user-attachments/assets/2d69a3a8-1455-4295-856b-8a0075fed1c6)
+![grafik](https://github.com/user-attachments/assets/bdebc1c8-c60f-4e46-a011-1a7b1402bd2f)
+
 
 Single cell RNA sequencing (scRNA-seq) measures whole transcriptome gene expression in individual cells, offering a detailed view of how cells function and interact within complex tissues. 
 Tracing individual transcripts back to their cells of origin enables researchers to pinpoint unique gene expression profiles in highly heterogeneous samples, ultimately revealing rare cell 
@@ -9,10 +10,11 @@ types and dynamic cell states that other methods often miss.
 This repository contains scripts, and resources for analyzing single-cell RNA sequencing (scRNA-seq) data generated using the 10x Genomics platform. 
 Designed for reproducibility and scalability, the pipeline supports key steps from raw FASTQ processing to downstream visualization and interpretation.
 
+More info: https://www.10xgenomics.com/
 ## 🧬 Workflow Overview
 
 1. **Preprocessing & Alignment**
-   - Input: FASTQ files
+   - Input: Paired-end FASTQ files (typically from Illumina sequencing)
    - Tool: `cellranger count`
    - Output: Gene-barcode matrices (filtered/unfiltered)
 
@@ -32,10 +34,11 @@ Designed for reproducibility and scalability, the pipeline supports key steps fr
 
 6. **Cell Type Annotation**
    - Manual curation or reference-based annotation (SingleR, CellTypist)
-  
+
 ## 📁 Project Structure
 
-scRNAseq-10x/
-├── scripts/ # Helper scripts (e.g., QC, clustering)
-├── licens
-└── README.md # Project overview
+├── bash/ # Raw and processed data (FASTQ, Cell Ranger)  
+├── scripts/ # Data analysis scripts in R (Seurat, Harmony, scTransform)  
+├── README.md  
+└── LICENSE
+
