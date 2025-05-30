@@ -38,7 +38,7 @@ More info: https://www.10xgenomics.com/
 ## 📁 Project Structure
 
 ├── bash/ # Raw and processed data (FASTQ, Cell Ranger)  
-├── scripts/ # Data analysis scripts in R (Seurat, Harmony, scTransform)  
+├── scripts/ # Data analysis scripts in R (Seurat/Scanpy)  
 ├── README.md  
 └── LICENSE
 
